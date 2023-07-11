@@ -1,0 +1,65 @@
+Factors association with foregoing CPAP trial and suboptimal outcome if CPAP trialed		
+		(1)
+VARIABLES	LABELS	Forego CPAP Trial
+		
+no_cpap	no_cpap	.
+		(. - .)
+		.
+age	Age per decade	0.22***
+		(0.07 - 0.38)
+		0.01
+female	Female	-0.21
+		(-0.65 - 0.24)
+		0.37
+bmi	BMI per 5 kg/m^2	0.04
+		(-0.10 - 0.18)
+		0.59
+1.smoking	Smoking Status = 1, Prior Smoker	-0.18
+		(-0.64 - 0.28)
+		0.43
+2.smoking	Smoking Status = 2, Current Smoker	0.46
+		(-0.27 - 1.18)
+		0.22
+elevation	Elevation per 1000 ft	-0.04
+		(-0.22 - 0.14)
+		0.66
+ahi	AHI per 10 events/hour	-0.00
+		(-0.07 - 0.06)
+		0.92
+hsat	Diagnosed by HSAT	-1.07***
+		(-1.59 - -0.54)
+		0.00
+has_cns	Neurologic Causes	0.55
+		(-0.18 - 1.28)
+		0.14
+has_cv	Cardiac Causes	0.27
+		(-0.54 - 1.08)
+		0.51
+has_opiate	Opiate Etiology	1.19***
+		(0.31 - 2.07)
+		0.01
+has_primary	Primary CSA	0.93
+		(-0.79 - 2.65)
+		0.29
+has_tecsa	Treatment-Emergent	0.33
+		(-0.62 - 1.29)
+		0.50
+has_osacsa	Centrals from OSA	0.72
+		(-0.30 - 1.75)
+		0.17
+0.perc_osa_ord	Portion Central Apneas = 0, <10% Central Apneas	-1.23***
+		(-1.97 - -0.49)
+		0.00
+1.perc_osa_ord	Portion Central Apneas = 1, 10-49.9% Central Apneas	-0.65**
+		(-1.28 - -0.01)
+		0.05
+3.perc_osa_ord	Portion Central Apneas = 3, {&ge}90% Central Apneas	2.10**
+		(0.32 - 3.87)
+		0.02
+Constant	Constant	-1.92**
+		(-3.81 - -0.03)
+		0.05
+		
+Observations		569
+ci in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		

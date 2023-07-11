@@ -1,0 +1,118 @@
+		(1)	(2)	(3)
+VARIABLES	LABELS	No_CPAP_Trial	Adequate_CPAP_Trial	Unsuccessful_CPAP_Trial
+				
+No_CPAP_Trial				
+		( - )		
+				
+o.age	Age per decade = o,	-		
+				
+		-		
+o.bmi	BMI per 5 kg/m^2 = o,	-		
+				
+		-		
+o.female	Female = o,	-		
+				
+		-		
+1o.smoking	Smoking Status = 1, omitted	-		
+				
+		-		
+2o.smoking	Smoking Status = 2, omitted	-		
+				
+		-		
+o.ahi	AHI per 10 events/hour = o,	-		
+				
+		-		
+o.hsat	Diagnosed by HSAT = o,	-		
+				
+		-		
+o.has_cns	Neurologic Causes = o,	-		
+				
+		-		
+o.has_cv	Cardiac Causes = o,	-		
+				
+		-		
+o.has_opiate	Opiate Etiology = o,	-		
+				
+		-		
+o.has_osacsa	Centrals from OSA = o,	-		
+				
+		-		
+o.has_tecsa	Treatment-Emergent = o,	-		
+				
+		-		
+o.has_primary	Primary CSA = o,	-		
+				
+		-		
+0o.perc_osa_ord	Portion Central Apneas = 0, omitted	-		
+				
+		-		
+1o.perc_osa_ord	Portion Central Apneas = 1, omitted	-		
+				
+		-		
+3o.perc_osa_ord	Portion Central Apneas = 3, omitted	-		
+				
+		-		
+o._cons		0		
+		(0 - 0)		
+				
+Adequate_CPAP_Trial				
+			( - )	
+				
+age	Age per decade		-0.201**	-0.227***
+			(-0.373 - -0.0284)	(-0.399 - -0.0547)
+			0.0225	0.00984
+bmi	BMI per 5 kg/m^2		-0.0709	-0.0167
+			(-0.234 - 0.0926)	(-0.172 - 0.138)
+			0.396	0.833
+female	Female		0.398	0.0487
+			(-0.0994 - 0.896)	(-0.450 - 0.547)
+			0.117	0.848
+1.smoking	Smoking Status = 1, Prior Smoker		0.202	0.256
+			(-0.310 - 0.714)	(-0.253 - 0.764)
+			0.439	0.324
+2.smoking	Smoking Status = 2, Current Smoker		-1.221**	0.0414
+			(-2.182 - -0.260)	(-0.713 - 0.796)
+			0.0128	0.914
+ahi	AHI per 10 events/hour		-0.00205	0.00372
+			(-0.0749 - 0.0708)	(-0.0650 - 0.0724)
+			0.956	0.915
+hsat	Diagnosed by HSAT		1.114***	0.894***
+			(0.555 - 1.673)	(0.320 - 1.468)
+			9.45e-05	0.00226
+has_cns	Neurologic Causes		-0.472	-0.446
+			(-1.370 - 0.426)	(-1.239 - 0.348)
+			0.303	0.271
+has_cv	Cardiac Causes		-0.170	-0.101
+			(-1.154 - 0.813)	(-0.984 - 0.782)
+			0.734	0.823
+has_opiate	Opiate Etiology		-1.776***	-0.713
+			(-2.970 - -0.582)	(-1.651 - 0.226)
+			0.00354	0.137
+has_osacsa	Centrals from OSA		-0.0805	-1.247**
+			(-1.277 - 1.116)	(-2.419 - -0.0749)
+			0.895	0.0370
+has_tecsa	Treatment-Emergent		-0.0642	-0.295
+			(-1.200 - 1.071)	(-1.332 - 0.741)
+			0.912	0.576
+has_primary	Primary CSA		-0.0623	-1.186
+			(-2.048 - 1.924)	(-3.243 - 0.871)
+			0.951	0.259
+0.perc_osa_ord	Portion Central Apneas = 0, <10% Central Apneas		1.948***	0.792**
+			(0.950 - 2.947)	(0.00783 - 1.577)
+			0.000131	0.0478
+1.perc_osa_ord	Portion Central Apneas = 1, 10-49.9% Central Apneas		1.292***	0.320
+			(0.365 - 2.218)	(-0.357 - 0.998)
+			0.00628	0.354
+3.perc_osa_ord	Portion Central Apneas = 3, {&ge}90% Central Apneas		-0.685	-16.40
+			(-2.592 - 1.222)	(-2,087 - 2,054)
+			0.481	0.988
+Unsuccessful_CPAP_Trial				
+				( - )
+				
+Constant	Constant		0.679	1.516*
+			(-1.301 - 2.659)	(-0.279 - 3.312)
+			0.501	0.0979
+				
+Observations		579	579	579
+ci in parentheses				
+*** p<0.01, ** p<0.05, * p<0.1				
