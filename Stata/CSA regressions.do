@@ -39,7 +39,7 @@ label variable has_cv "Cardiac Causes"
 label variable has_opiate "Opiate Etiology"
 label variable has_primary "Primary CSA"
 label variable has_tecsa "Treatment-Emergent"
-label variable has_osacsa "Centrals from OSA"
+label variable has_osacsa "CA-OSA"
 label variable perc_osa_ord "Portion Central Apneas"
 label define perc_osa_ord_label_abbrev 0 "<10%" 1 "10-49%" 2 "50-89%" 3 "{&ge}90%"
 label values perc_osa_ord perc_osa_ord_label_abbrev
@@ -71,7 +71,7 @@ replace etio_cat = 1 if has_cns == 1
 replace etio_cat = 2 if has_cv == 1
 replace etio_cat = 3 if has_opiate == 1
 replace etio_cat = 0 if has_cns + has_cv + has_opiate + has_primary + has_tecsa + has_osacsa > 1 //captures that if there's more than 1, replace with multiple -> thus order doesn't matter. 
-label define etio_cat_label 0 "Multiple" 1 "Neurologic" 2 "Cardiac" 3 "Opiate" 4 "Primary" 5 "TECSA" 6 "OSA"
+label define etio_cat_label 0 "Multiple" 1 "Neurologic" 2 "Cardiac" 3 "Opiate" 4 "Primary" 5 "TECSA" 6 "CA-OSA"
 label values etio_cat etio_cat_label
 
 *multinomial version on the initial dataset: with outcomes: not prescribed cpap, resolve cpap, not resolve cpap
