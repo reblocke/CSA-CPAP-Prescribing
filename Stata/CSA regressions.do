@@ -345,6 +345,8 @@ saving("cpap compliant table1.xlsx", replace)
 
 //Noncompliance 
 logistic outcome_noncompliant age female bmi i.smoking elevation ahi hsat has_cns has_cv has_opiate has_primary has_tecsa has_osacsa ib2.perc_osa_ord 
+estimates store nonadh_or
+coefplot nonadh_or, drop(_cons) baselevels legend(pos(2) ring(0) size(2.5)) eform xscale(log) xline(1) xlabel(0.25 0.5 1 2 4 8 16 32) xscale(extend) yscale(extend)  headings(age = "{bf:Patient Characteristics}" ahi = "{bf:Disease Characteristics}" 0.perc_osa_ord = "{bf:Proportion Central Events}" has_cns = "{bf:Etiology}") xtitle("Odds Ratio of non-adherence, as documented by sleep provider" , size(small)) plotlabels("Adjusted OR, among those prescribed CPAP") ciopts(recast(rcap)) xsize(7) ysize(5)
 outreg2 using logistic_results, word append ctitle(CPAP Nonadherence) dec(2) sdec(2) stat(coef ci pval) title(Factors association with foregoing CPAP trial and suboptimal outcome if CPAP trialed) label 	
 * Multi-colinearity testing
 vif, unc
