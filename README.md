@@ -7,7 +7,6 @@
 - Open-access manuscript: PMCID [PMC10869204](https://pmc.ncbi.nlm.nih.gov/articles/PMC10869204/), PMID [37987861](https://pubmed.ncbi.nlm.nih.gov/37987861/)
 - Repository: https://github.com/reblocke/CSA-CPAP-Prescribing
 - Code availability statement in paper links to this repo.
-- Suggested archival practice: create a tagged release of this repository and archive it to Zenodo to mint a release DOI; record the tag and DOI here for long-term reproducibility.
 
 ## Cite this work
 Please cite the **article** as the primary scholarly object and this repository as the **software** artifact. A machine-readable citation file (`CITATION.cff`) is provided.
