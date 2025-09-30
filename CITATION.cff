@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: >-
+  If you use this repository, please cite both the article and this software.
+title: "CSA-CPAP-Prescribing"
+type: software
+authors:
+  - family-names: Locke
+    given-names: Brian W.
+    orcid: https://orcid.org/0000-0002-3588-5238
+  - family-names: Sellman
+    given-names: Jeffrey
+  - family-names: McFarland
+    given-names: Jonathan
+  - family-names: Uribe
+    given-names: Francisco
+  - family-names: Workman
+    given-names: Kimberly
+  - family-names: Sundar
+    given-names: Krishna M.
+    orcid: https://orcid.org/0000-0001-7220-5767
+repository-code: https://github.com/reblocke/CSA-CPAP-Prescribing
+url: https://github.com/reblocke/CSA-CPAP-Prescribing
+preferred-citation:
+  type: article
+  title: "Predictors of Initial CPAP Prescription and Subsequent Course with CPAP in Patients with Central Sleep Apneas at a Single Center"
+  authors:
+  - family-names: Locke
+    given-names: Brian W.
+    orcid: https://orcid.org/0000-0002-3588-5238
+  - family-names: Sellman
+    given-names: Jeffrey
+  - family-names: McFarland
+    given-names: Jonathan
+  - family-names: Uribe
+    given-names: Francisco
+  - family-names: Workman
+    given-names: Kimberly
+  - family-names: Sundar
+    given-names: Krishna M.
+    orcid: https://orcid.org/0000-0001-7220-5767
+  journal: "Lung"
+  volume: "201"
+  issue: "6"
+  start: "625"
+  end: "634"
+  year: 2023
+  doi: "10.1007/s00408-023-00657-z"
+  url: "https://link.springer.com/article/10.1007/s00408-023-00657-z"
+  identifiers:
+    - type: pmcid
+      value: "PMC10869204"
+    - type: pmid
+      value: "37987861"
