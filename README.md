@@ -82,3 +82,51 @@ This work was supported by the **National Institutes of Health** under Ruth L. K
 
 ## Maintainers / contact
 Open an issue in this repository for questions about the code. For scientific questions about the study, please contact the corresponding author listed in the manuscript.
+
+## LLM and Repository Readiness Notes
+
+### Description
+Predictors of Initial CPAP Prescription and Subsequent Course with CPAP in Patients with Central Sleep Apneas at a Single Center
+
+### Instructions
+Start with this README, then inspect the files listed under Repository Layout. For computational workflows, run commands from the repository root and avoid committing generated outputs unless a release explicitly calls for them.
+
+### Authors, Funding, and Acknowledgments
+Maintainer: Brian W. Locke (`@reblocke`, ORCID 0000-0002-3588-5238). Preserve any project-specific author, funding, and acknowledgment details already listed elsewhere in the repository or accompanying publication.
+
+### Repository Layout
+- `.DS_Store`
+- `CITATION.cff`
+- `CODE_OF_CONDUCT.md`
+- `CONTRIBUTING.md`
+- `Figures/Enrollment Flowchart.drawio`
+- `Figures/Enrollment Flowchart.png`
+- `Figures/Figure 1.drawio`
+- `Figures/Figure 3.png`
+- `Figures/Figure 4.png`
+- `Figures/Figure 5.png`
+- `Figures/Outcomes Results.drawio`
+- `Figures/Outcomes Results.png`
+- `Figures/Outcomes.drawio`
+- `Figures/Outcomes.drawio.png`
+
+### Data and Codebook
+Clinical sleep-center data likely restricted; verify no PHI
+
+### Workflow / Script Order
+stata-mp -b do <main .do>
+
+### Dependencies / Environment
+Stata and repo README
+
+### Citation
+Preferred scholarly citation: https://doi.org/10.1007/s00408-023-00657-z. Cite this repository with the GitHub URL and the commit or release used.
+
+### License
+Repository license status: MIT. See the root license file when present. Third-party and publisher materials remain under their original terms.
+
+### Manuscript Status
+Local accepted draft candidate exists in CSA folder; publisher-policy check needed before Markdown Publisher text not copied; code license present
+
+### Contact
+Maintainer: Brian W. Locke (`@reblocke`). Use GitHub issues or pull requests for repository-specific questions when the repository is public.
