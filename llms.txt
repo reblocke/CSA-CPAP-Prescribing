@@ -1,0 +1,46 @@
+# CSA-CPAP-Prescribing
+
+Public paper-code repository for:
+
+Locke BW, Sellman J, McFarland J, Uribe F, Workman K, Sundar KM. Predictors of Initial CPAP Prescription and Subsequent Course with CPAP in Patients with Central Sleep Apneas at a Single Center. Lung. 2023;201(6):625-634. DOI: 10.1007/s00408-023-00657-z. PMID: 37987861. PMCID: PMC10869204.
+
+Historical preprint context: DOI 10.21203/rs.3.rs-3199807/v1; PMID 37547021; PMCID PMC10402256.
+
+Repository URL: https://github.com/reblocke/CSA-CPAP-Prescribing
+
+## Purpose
+
+This repository contains the Stata workflow and aggregate paper-facing artifacts for a single-center EHR/sleep-center study of predictors of initial CPAP prescription and subsequent course with CPAP among patients with central sleep apneas.
+
+## Data Restrictions
+
+Raw patient-level EHR and sleep-center data are restricted under University of Utah IRB #00123537 and are not public. The expected private local input is `coded_output.xlsx`; do not commit it. Derived row-level `.dta` files and local rerun outputs must stay under ignored local output paths.
+
+## Important Files
+
+- `README.md`: human-readable overview, article links, dependencies, workflow, data-access notes, and results mapping.
+- `CITATION.cff`: CFF 1.2 citation metadata for the software repository and preferred article citation.
+- `AGENTS.md`: repo-specific instructions for future agents.
+- `data_dictionary.md` and `data_dictionary.csv`: expected input variables, derived analysis variables, outputs, and review flags.
+- `Stata/CSA regressions.do`: main analysis workflow.
+- `Results/` and `Figures/`: tracked aggregate paper-facing artifacts, not private source data.
+
+## Run Path
+
+Canonical run from repository root:
+
+```stata
+do "Stata/CSA regressions.do"
+```
+
+Optional private input and local output roots:
+
+```stata
+do "Stata/CSA regressions.do" "data/private" "outputs/stata"
+```
+
+The do-file writes logs, copied do-files, derived data, tables, and local rerun figures under `outputs/stata/<date>/`.
+
+## Agent Cautions
+
+Do not copy manuscript text into Markdown. Do not add publisher PDFs, PHI, private workbooks, generated `.dta` files, Stata logs, or local rerun outputs. Preserve the article DOI/PMID/PMCID in documentation, but keep CFF identifiers valid under CFF 1.2.
