@@ -8,13 +8,13 @@ Thanks for your interest in improving the reproducibility and usability of this 
 
 ## Development workflow
 1. Describe the change in the PR description, including what paper result it affects (if any).
-2. Keep analysis code in `Stata/` and exported artifacts in `Results/` and `Figures/`.
+2. Keep analysis code in `Stata/`. Local rerun exports should go under ignored `outputs/`; only intentionally reviewed aggregate paper artifacts belong in tracked `Results/` or `Figures/`.
 3. If you add new dependencies (e.g., Stata packages), add the install commands to the README under *Stata packages*.
 
 ## Style and conventions
 - Stata do-files should be commented and organized into sections (setup, data prep, models, outputs).
-- Prefer deterministic workflows: write outputs to `Results/` and `Figures/` using explicit file names.
-- Avoid committing PHI/PII or any raw patient data. Do **not** commit EHR extracts.
+- Prefer deterministic workflows: write local rerun outputs under ignored `outputs/` using explicit file names.
+- Avoid committing PHI/PII, raw patient data, private workbooks, derived `.dta` files, logs, or local rerun outputs. Do **not** commit EHR extracts.
 
 ## Tests and examples
 - Where feasible, add a **smoke test** (e.g., run models on a 10-row synthetic dataset) to check that the code executes without error.

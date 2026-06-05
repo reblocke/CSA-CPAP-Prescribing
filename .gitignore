@@ -1,4 +1,29 @@
+.DS_Store
 
-.DS_Store
-.DS_Store
-.DS_Store
+# Stata local artifacts
+*.dta
+*.gph
+*.log
+*.smcl
+*.ster
+*.tmp
+
+# Local/private inputs
+coded_output.xlsx
+data/
+Data/
+private/
+raw/
+
+# Generated rerun outputs
+outputs/
+Results and Figures/
+
+# Editor and cache files
+.Rhistory
+.RData
+.Rproj.user/
+.idea/
+.vscode/
+__pycache__/
+.pytest_cache/
