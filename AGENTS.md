@@ -39,7 +39,7 @@ The script requires Stata 17 or newer plus the user-written commands and graph s
 ## Verification Before Publishing Changes
 
 - Run `git diff --check`.
-- Validate `CITATION.cff` with `uvx --from cffconvert cffconvert --validate --infile CITATION.cff`.
+- After citation edits, validate `CITATION.cff` with `uvx --from cffconvert cffconvert --validate --infile CITATION.cff`.
 - Search for hard-coded local paths, stale placeholders, and generic readiness appendices.
 - Confirm no tracked `.dta`, private workbook, log, or local rerun output is present.
-- If Stata is available, run a batch smoke check; missing private input or missing documented user-written packages is an acceptable documented failure.
+- For analysis/runner changes, perform applicable Stata verification within the authorized workflow. It requires a licensed runtime and the approved inputs; executable availability alone does not authorize a restricted-data run. Inspect generated logs and report unavailable data/package/runtime gates separately from static checks.
